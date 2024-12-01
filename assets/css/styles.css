@@ -51,16 +51,25 @@ a {
 }
 
 /* Header */
-.header {
+.fixed-header {
+    position   : sticky;
+    top        : -26px;
+    background : #E6F0FF;
+    padding-top: 26px;
+    z-index    : 1;
+}
+
+.hero-wrap {
     position  : relative;
     height    : 100vh;
     background: #E6F0FF;
 }
 
 .navbar {
-    display    : flex;
-    align-items: center;
-    padding-top: 38px;
+    display       : flex;
+    align-items   : center;
+    /* padding-top: 38px; */
+    padding       : 12px 0;
 
 }
 
@@ -97,7 +106,7 @@ a {
 }
 
 .hero {
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .hero .info {
@@ -612,13 +621,17 @@ a {
 
 .footer .social {
     /* display   : flex; */
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .footer .social-link {
     /* display        : flex;
     align-items    : center;
     justify-content: center; */
+}
+
+.footer .social-link+.social-link {
+    margin-top: 16px;
 }
 
 .footer .row-bottom {
